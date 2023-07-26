@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+h3 {
+    font-size: 44px;
+    line-height: 55px;
+    color: #121212;
+    font-weight: 600;
+}
+h6 {
+    font-size: 20px;
+    line-height: 23px;
+    color: #6c6c6c;
+    margin-top: 16px;
+    font-weight: normal;
+}
+
+/* Navbar */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 6.5rem;
+    background: transparent;
+    transition: all 0.5s ease;
+}
+
+.nav .navbar-toggler {
+    display: none;
+    outline: none;
+    border: none;
+}
+.nav .navbar-toggler .toggler-icon{
+    width: 27px;
+    height: 3px;
+    margin: 5px 0;
+    background: #121212;
+    position: relative;
+    display:block;
+    transition: all 0.3s ease-out 0s;
+}
+
+.nav .menu-bar .menu-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav .menu-bar .menu-items li {
+    margin: 0 15px;
+}
+.nav .menu-bar .menu-items li a {
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+}
+.nav .menu-bar .menu-items li a:hover {
+    color: #4F47E4;
+}
+
+.nav .navbar-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav .navbar-social span{
+    font-size: 18px;
+    font-weight: 600;
+    padding-right: 10px;
+    color: #6c6c6c;
+}
+.nav .navbar-social ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav .navbar-social ul li {
+    margin: 0 7px;
+}
+.nav .navbar-social ul li a {
+    color: #6c6c6c;
+    font-size: 22px;
+}
+
+
+/* Home */
+
+.back {
+    width: 100%;
+    height: 120vh;
+}
