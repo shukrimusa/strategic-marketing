@@ -30,10 +30,27 @@ h6 {
     margin-top: 16px;
     font-weight: normal;
 }
+.main-btn {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    border: 2px solid transparent;
+    padding: 0 32px;
+    white-space: nowrap;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 48px;
+    color: #0067f4;
+    cursor:pointer;
+    transition: all 0.4s ease-out 0s;
+    z-index: 1;
+    
 
+}
 /* Navbar */
 
 .nav {
+    position: fixed;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -42,8 +59,16 @@ h6 {
     padding: 1rem 6.5rem;
     background: transparent;
     transition: all 0.5s ease;
+    z-index: 999;
 }
-
+.nav .logo {
+    width: 50px;
+    height: 50px;
+}
+.nav .logo img{
+    width: 100%;
+    height: 100%;
+}
 .nav .navbar-toggler {
     display: none;
     outline: none;
@@ -53,7 +78,7 @@ h6 {
     width: 27px;
     height: 3px;
     margin: 5px 0;
-    background: #121212;
+    background: #0000;
     position: relative;
     display:block;
     transition: all 0.3s ease-out 0s;
@@ -106,4 +131,165 @@ h6 {
 .back {
     width: 100%;
     height: 120vh;
+    background-image: url('images/home.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+   
+    
+}
+
+.back .overlay {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(253,252,252,0) 24%, rgba(245,241,241,1) 80%);
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.hero-text h6 {
+    color: #1d1d1d;
+
+}
+
+.header-btn {
+    margin-top: 22px;
+   
+}
+
+.header-btn li {
+    display: inline-block;
+    margin: 10px 10px 0 0;
+}
+
+
+.hero-text .header-btn  .main-btn {
+    border-radius: 50px;
+    background-color: #fff;
+    border: 0;
+    line-height: 50px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    overflow: hidden;
+    
+    
+}
+.hero-text .header-btn  .main-btn ion-icon {
+    color: #646EE5;
+    font-size: 20px;
+    margin-left: 5px;
+    
+    
+}
+.hero-text .header-btn .btn-one {
+    color: #fff;
+    position: relative;
+    
+   
+}
+
+.hero-text .header-btn .btn-one::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, #535cf1, #a147e4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease;
+    z-index: -1;
+    
+}
+.hero-text .header-btn .btn-one:hover::before {
+    background-image: linear-gradient(to left, #535cf1, #a147e4);
+}
+.hero-text .header-btn .btn-two:hover{
+    box-shadow: 0 3px 25px rgba(0, 0, 0, 0.16);
+}
+
+#wrapper {
+    margin: 5rem 7rem 10rem 7rem;
+}
+
+
+.service {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+.service h6 {
+    text-align: center;
+}
+
+.service .service-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+ 
+}
+
+.service .service-content .service-img {
+    width: 40%;
+}
+.service .service-content .service-img img {
+    width: 100%;
+    min-width: 200px
+}
+.service .service-content .box {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.service .service-content .box .box-one {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+.service .service-content .box .box-one .services{
+   
+    margin-bottom: 2rem;
+}
+.service .service-content .box .box-one .services .service-icon{
+    font-size: 3rem;
+    color: #535cf1;
+    margin-bottom: 10px;
+}
+.pricing {
+    display: block;
+    text-align: center;
+}
+
+.pricing h6 {
+    margin-bottom: 6rem;
+}
+
+.pricing .table .basic {
+    width: 355px;
+    height: 100%;
+    border: 1px solid #535cf1;
+    border-radius: 20px;
+    
+}
+
+.pricing .table .basic h3 {
+    text-align: center;
+    font-weight: 300;
+    padding:40px 0;
+    background-color: #ecf0f1;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;;
+    transition: all ease 0.6s;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%)
 }
