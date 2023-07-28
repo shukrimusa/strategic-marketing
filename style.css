@@ -61,11 +61,11 @@ h6 {
     transition: all 0.5s ease;
     z-index: 999;
 }
-.nav .logo {
+.logo {
     width: 50px;
     height: 50px;
 }
-.nav .logo img{
+.logo img{
     width: 100%;
     height: 100%;
 }
@@ -223,6 +223,7 @@ h6 {
     justify-content: center;
     align-items: center;
     text-align: left;
+    margin-bottom: 10rem;
 }
 .service h6 {
     text-align: center;
@@ -269,6 +270,7 @@ h6 {
 .pricing {
     display: block;
     text-align: center;
+   margin-bottom: 10rem;
 }
 
 .pricing h6 {
@@ -292,4 +294,316 @@ h6 {
     border-top-left-radius: 20px;;
     transition: all ease 0.6s;
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%)
+}
+.pricing .table .basic:hover h3 {
+    background-image: linear-gradient(to right, #535cf1, #a147e4);
+    color: #fff;
+}
+.pricing .table .standared h3 {
+    background-image: linear-gradient(to right, #535cf1, #a147e4);
+    color: #fff;
+}
+.pricing .table .basic .price {
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.pricing .table .basic .price .sign {
+    vertical-align: middle;
+    font-size: 28px;
+    font-weight: 400;
+    display: inline-block
+}
+
+.pricing .table .basic .price .currency {
+font-size: 60px;
+line-height: 60px;
+padding: 0;
+vertical-align: middle;
+font-weight: 300;
+letter-spacing: -2px;;
+}
+.pricing .table .basic .price .cent {
+display: inline-block;
+font-size: 24px;
+font-weight: 400;
+vertical-align: bottom;
+;
+}
+
+.pricing .table .basic .price .month {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    vertical-align: bottom;
+
+}
+
+.pricing .table .basic ul li {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 18px 0;
+    color: #7f8c8d
+}
+
+.pricing .table .basic ul li ion-icon {
+    padding-right: 5px;
+    color: #535cf1;
+   
+
+}
+
+.pricing .table .basic .header-btn {
+    margin: 2rem auto;
+    width: 170px;
+}
+.pricing .table .basic .header-btn .main-btn {
+    font-size: 18px;
+    font-weight: normal;
+    border: 1px solid #2ecc71;
+    border-radius: 50px;
+    outline: medium none;
+    color: #1d1d1d;
+    ;
+}
+.pricing .table .basic:hover .header-btn .main-btn {
+    background-image: linear-gradient(to right, #535cf1, #a147e4);
+    color: #fff;
+}
+.pricing .table .standared .header-btn .main-btn {
+    background-image: linear-gradient(to right, #535cf1, #a147e4);
+    color: #fff;
+}
+
+.pricing .table {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.callToAct {
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), #910afa),url('images/1.jpg');
+    margin-bottom: 10rem;
+    
+    min-height: 500px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative
+}
+
+.callToAct .parallax{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.callToAct .parallax .call-content h3 {
+    color: #fff;
+}
+
+.callToAct .parallax .call-content p {
+    color: #fff;
+    font-size: 18px;
+    padding: 20px 0;
+}
+.callToAct .parallax .call-content .call-news {
+    background-color: #fff;
+    max-width: 450px;
+    padding: 12px 0 12px 15px;
+    border-radius: 50px;
+    margin: auto;
+}
+.callToAct .parallax .call-content .call-news ion-icon {
+    color: #535cf1;
+    padding-right: 10px;
+    font-size: 18px;
+}
+.callToAct .parallax .call-content .call-news input {
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+.callToAct .parallax .call-content .call-news button{
+    background-image: linear-gradient(to right, #535cf1, #a147e4);
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 15px 20px;
+    cursor: pointer;
+    margin-left: 20px;
+    border-radius: 50px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.contact h6 {
+    margin-bottom: 3rem;
+}
+.contact .form {
+    width: 70%;
+}
+
+.contact .form .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 0;
+}
+.contact .form .row input {
+    width: 47%;
+    height: 55px;
+    border: 1px solid #cbced1;
+    border-radius: 5px;
+    padding: 0 25px;
+    outline: none;
+    font-size: 16px;
+}
+.contact .form textarea {
+    width: 100%;
+    resize:none;
+    border: 1px solid #cbced1;
+    border-radius: 25px;
+    padding: 0 25px;
+    outline: none;
+    font-size: 16px;;
+    padding-top: 15px;
+}
+.contact .form .header-btn {
+    margin: 2rem auto;
+    width: 170px;
+}
+
+.contact .form .header-btn .main-btn {
+    background-image: linear-gradient(to right, #535cf1, #a147e4);
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: normal;
+    outline: none;;
+}
+
+/* Footer */
+
+footer {
+    background-color: #f4f6f7;
+    padding: 7rem;
+}
+
+footer .row-one {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem
+}
+footer .row-one .logo {
+    width: 40px;
+    height: 40px;
+}
+footer .row-one ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer .row-one a {
+    font-size: 26px;
+    color: #6c6c6c;
+}
+
+
+footer .second-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+footer .second-row .col h6 {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    color: #6c6c6c;
+    padding-bottom: 20px;;
+}
+footer .second-row .col ul li {
+    padding: 12px;
+}
+footer .second-row .col ul li a {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #121212 ;
+}
+footer .second-row .col:nth-child(4) {
+    max-width: 300px;
+}
+footer .second-row .col .newsletter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    position: relative;
+   
+}
+
+footer .second-row .col .newsletter input {
+    width: 100%;
+    height: 44px;
+    border-radius: 50px;
+    padding: 0 24px;
+    border: 0;
+    outline:0;
+    background-color: rgba(33, 33, 33, 0.12);
+    font-weight: 500;
+    ;
+}
+footer .second-row .col .newsletter input::placeholder {
+    color: #6c6c6c;
+}
+footer .second-row .col .newsletter button {
+    border: 0;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    width: 44px;
+    height: 44px;
+    font-size: 20px;
+    color: #121212;
+    background-color: none;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    ;
+}
+
+footer .second-row .col .text {
+    margin-top: 16px;
+}
+
+.copyright {
+    background-color: #2b354f;
+    padding: 23px 0;
+}
+
+.copyright p {
+    text-align: center;
+    color: #fff;
+}
+.copyright p a {
+    color: #1abc9c
 }
