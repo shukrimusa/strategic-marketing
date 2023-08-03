@@ -3,9 +3,19 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: sans-serif;
+    
+}
+
+.offset::before {
+    display:block;
+    content: "";
+    height: 10rem;
+    margin-top: -2rem;
     
 }
 
@@ -25,7 +35,7 @@ h3 {
 }
 h6 {
     font-size: 20px;
-    line-height: 23px;
+    line-height: 30px;
     color: #6c6c6c;
     margin-top: 16px;
     font-weight: normal;
@@ -60,7 +70,11 @@ h6 {
     background: transparent;
     transition: all 0.5s ease;
     z-index: 999;
+    background: #fff;
+    box-shadow: 7px 10px 15px rgba(0, 0, 0, 0.3);
+    
 }
+
 .logo {
     width: 50px;
     height: 50px;
@@ -78,7 +92,7 @@ h6 {
     width: 27px;
     height: 3px;
     margin: 5px 0;
-    background: #0000;
+    background: #000;
     position: relative;
     display:block;
     transition: all 0.3s ease-out 0s;
@@ -130,7 +144,7 @@ h6 {
 
 .back {
     width: 100%;
-    height: 120vh;
+    height: 90vh;
     background-image: url('images/home.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -151,6 +165,7 @@ h6 {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    
 }
 
 .hero-text h6 {
@@ -250,6 +265,7 @@ h6 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 1rem;
 }
 
 .service .service-content .box .box-one {
@@ -379,9 +395,9 @@ vertical-align: bottom;
 .pricing .table {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
-    gap: 1rem;
+    
 }
 
 .callToAct {
@@ -531,6 +547,7 @@ footer .second-row {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 1rem
 }
 footer .second-row .col h6 {
     font-size: 14px;
@@ -606,4 +623,184 @@ footer .second-row .col .text {
 }
 .copyright p a {
     color: #1abc9c
+}
+
+
+
+
+
+@media (max-width:946px) {
+    .nav {
+        padding: 1rem 4rem;
+    }
+    .nav .navbar-social {
+        display: none;
+        
+    }
+    .hero-text {
+       width: 60%;
+    }
+    h3 {
+        font-size: 33px;
+        
+    }
+
+    #wrapper {
+        margin: 3rem 3rem 10rem 3rem;
+    }
+
+    .service {
+        
+        margin-bottom: 3rem;
+    }
+
+    .service h6 {
+        margin-bottom: 3rem;
+    }
+    .service .service-content {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+       
+        
+    }
+    .service .service-content .box {
+        width: 100%;
+        
+    }
+    .service .service-content .service-img {
+        width: 100%;
+        margin-bottom: 5rem;
+    }
+    .pricing {
+        
+    }
+    .pricing .table {
+        
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        
+    }
+    .pricing .table .basic {
+        margin-bottom: 3rem;
+    }
+    .callToAct {
+       
+        margin-bottom: 5rem;
+        
+    }
+    .callToAct .parallax {
+       width: 80%;
+    }
+    .contact .form {
+        width: 80%;
+    }
+}
+@media (max-width:774px) {
+    .nav {
+        padding: 1rem 0.7rem;
+    }
+    .nav .navbar-toggler {
+        display: block;
+        position: absolute;
+        top: 26px;
+        right: 16px;
+    }
+    .nav .menu-bar{
+        position: absolute;
+        top: 55px;
+        right: -360px;
+        width: 300px;
+        height: 100vh;
+        background-color: rgba(256, 256, 256, 0.9);
+        transition: all 0.6s ease;
+    }
+    .nav .menu-bar .menu-items {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: justify;
+        padding: 40px 0;;
+    
+    }
+    .nav .menu-bar .menu-items li {
+        margin: 2rem 30px;
+    }
+    .hero-text {
+        width: 80%;
+    }
+    #wrapper {
+        margin: 3rem 1rem 10rem 1rem;
+    }
+    .service .service-content .service-img {
+        width: 90%;
+        
+    }
+    .service .service-content .box {
+        width: 90%;
+    }
+    .pricing .table {
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: nowrap;
+        
+    }
+    .callToAct .parallax {
+        width: 90%;
+    }
+    footer {
+       padding: 4rem 1rem;
+    }
+    footer .second-row {
+        flex-wrap: wrap;
+    }
+    footer .second-row .col {
+        margin-bottom: 1rem;
+    }
+}
+@media (max-width:541px) {
+    h3 {
+        font-size: 28px;
+        line-height: 45px;
+    }
+    .hero-text .header-btn  .main-btn {
+        margin-top: 0.7rem;
+    }
+    .service {
+        
+        justify-content: center;
+        
+        
+    }
+    
+    .service .service-content {
+        width: 90%;
+    }
+    .service .service-content .service-img {
+        width: 100%;
+    }
+    .service .service-content .box {
+        width: 100%;
+        
+        flex-direction: column;
+        
+        
+    }
+    .contact .form {
+        width:100%;
+    }
+    .contact .form .row {
+       
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: 0;
+        
+    }
+    .contact .form .row input {
+        width: 100%;
+        margin-bottom: 2rem;
+       
+    }
 }
