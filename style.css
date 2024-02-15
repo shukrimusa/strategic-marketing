@@ -87,6 +87,7 @@ h6 {
     display: none;
     outline: none;
     border: none;
+    cursor: pointer;
 }
 .nav .navbar-toggler .toggler-icon{
     width: 27px;
