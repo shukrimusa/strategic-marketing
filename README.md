@@ -1,4 +1,2 @@
-"# project9" 
- https://ionic.io/ionicons
-
- https://cssgradient.io/
+## Strategic Marketing
+It is a simple website focusing on the basic of HTML, CSS, and JavaScript.
